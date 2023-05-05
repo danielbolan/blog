@@ -1,0 +1,31 @@
+baseURL = "//dcb.lu/blog/"
+canonifyurls = true
+title = "dcb.lu"
+
+# Main menu which appears below site header.
+[[menu.main]]
+name = "Home"
+url = "https://dcb.lu/"
+weight = 1
+
+[[menu.main]]
+name = "Writings"
+url = "/"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "lovelace"
+    tabWidth = 4

@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section id="writing">
+    <h1 class="article-title">Posts</h1>
+
+    {{ $mainPosts := (sort (where site.RegularPages "Section" "posts") "Date" "desc") }}
+    <ul class="post-list">
+        {{ range $mainPosts }}
+        <li class="post-item">
+            <time datetime="{{ time .Date }}">{{ .Date.Format "06-01-02" }}</time>
+            <span><a href="{{ .Permalink }}">{{ if .Title }} {{- .Title -}} {{ else }} {{- print "Untitled" -}}{{ end
+          }}</a></span>
+        </li>
+        {{ end }}
+    </ul>
+</section>
+{{ end }}

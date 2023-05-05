@@ -1,0 +1,11 @@
+{{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") -}}
+{{- $styles := (resources.Get "scss/style.scss" | resources.ToCSS $options) -}}
+<link rel="stylesheet" href="{{ $styles.Permalink }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+{{ if isset .Params "math" }}
+{{ partial "math.html" . }}
+{{ end }}
