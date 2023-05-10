@@ -9,13 +9,13 @@ url = "https://dcb.lu/"
 weight = 1
 
 [[menu.main]]
-name = "Writings"
+name = "Posts"
 url = "/"
 weight = 2
 
 [[menu.main]]
-name = "About"
-url = "/about"
+name = "Colophon"
+url = "/colophon"
 weight = 3
 
 [markup]
