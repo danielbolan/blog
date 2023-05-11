@@ -1,8 +1,7 @@
 ---
 math: true
+Title: Colophon
 ---
-
-# Colophon
 
 Built using [Hugo](https://gohugo.io), hosted on Github.\
 Typeset in [`Roboto Mono`](https://fonts.google.com/specimen/Roboto+Mono) and [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed).\

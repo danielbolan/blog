@@ -12,3 +12,11 @@
 {{ if isset .Params "math" }}
 {{ partial "math.html" . }}
 {{ end }}
+
+<title>
+    {{ if .IsHome }}
+    dcb.lu/blog
+    {{else}}
+        {{ .Title }} | dcb.lu/blog
+        {{end}}
+</title>
