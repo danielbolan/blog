@@ -6,11 +6,11 @@ tags:
  - art
 ---
 
-_This is a re-write of an older post, edited down since the original rambled a bit. You can read the original [here](/archived/red-waiss-blauw)._
+_This is a rewrite of an older post, edited down since the original rambled a bit. You can read the original [here](/archived/red-waiss-blauw)._
 
 ## First, A Few Fun Flag Facts
 
-The Luxembourgish and Dutch flags are nearly identical, save for their slightly different shades of blue used for their bottom stripes.[^1] One day I was curious to see how different they were, and whether the reds are actually the same.[^2] This sent me down a much deeper rabbit hole than even the usual colors about questions tend to be.
+The Luxembourgish and Dutch flags are nearly identical, save for their slightly different shades of blue used for their bottom stripes.[^1] One day I was curious to see how different they were, and whether the reds are actually the same.[^2] This sent me down a much deeper rabbit hole than even the usual questions about colors tend to be.
 
 [^1]: Their proportions are also a bit different. Interestingly, the Luxembourgish flag has two officially accepted proportions --- 1:2 and 3:5 are both considered fine. I don’t know of any other countries that do this, though I’m sure someone better versed in vexillology could come up with an example.
 
@@ -28,11 +28,11 @@ Because Luxembourg didn't bother to standardize the colors of its flag until 199
 >
 > The coordinate system is chosen in such a way that the following applies for an idealized white surface: Y=100.
 
-As the column names might suggest, this is the [CIE 1931 XYZ color space](https://en.wikipedia.org/wiki/CIE_1931_color_space). Using any online conversion tool you can easily find get the sRGB equivalent {{< inlineColor 21468B >}}. Except...
+As the column names might suggest, this is the [CIE 1931 XYZ color space](https://en.wikipedia.org/wiki/CIE_1931_color_space). Using any online conversion tool you can easily find the sRGB equivalent {{< inlineColor 21468B >}}. Except...
 
 ## Oops, Wrong White
 
-Converting between color spaces depends heavily upon what exactly you mean when you say something is "white." This in turn depends upon what what kind of light you're using. For nearly all modern applications, this refers to a color known as D65, which is meant to approximate the color of sunlight on a clear day in central Europe. Due to its ubiquity, just about any color converter you'll find online uses D65 implcitly. The issue, though, is that D65 wasn't a standard until 1967, long after the Dutch flag was standardized! Standard Illuminant C, as used in the flag specification, was defined by the CIE in 1931 by using an incadescent lightbulb at a specific temperature and a liquid filter. This was also meant to mimic that spectrum of sunlight, but it turned out that this wasn't a very good approximation and has been deprecated since the D series was formalized.
+Converting between color spaces depends heavily upon what exactly you mean when you say something is "white." This in turn depends upon what kind of light you're using. For nearly all modern applications, this refers to a color known as D65, which is meant to approximate the color of sunlight on a clear day in central Europe. Due to its ubiquity, just about any color converter you'll find online uses D65 implicitly. The issue, though, is that D65 wasn't a standard until 1967, long after the Dutch flag was standardized! Standard Illuminant C, as used in the flag specification, was defined by the CIE in 1931 by using an incandescent lightbulb at a specific temperature and a liquid filter. This was also meant to mimic that spectrum of sunlight, but it turned out that this wasn't a very good approximation and has been deprecated since the D series was formalized.
 
 [^3]: If you're working with printing processes, you might be using an illuminant called D50.
 
@@ -50,8 +50,8 @@ Hm. Not much, apparently. dE00, an equation used for perceptual distance, spits 
 
 The incorrect colors were listed on the English Wikipedia page in early 2009, and have since proliferated into many, many instances of people using this value in their code as found on GitHub. It's fixed now (at least in the English entry), but the incorrect color is likely to live on far into the future.
 
-The [Rijkshuisstijl](https://www.rijkshuisstijl.nl/english/colours), the graphic design authority for the Dutch central government, doesn't have much to say about the flag. It specifies that the blue used in the central government's logo is {{< inlineColor 154273 >}}, which is similar but noticably different from the color we got by converting from XYZ. If this is meant to be a direct conversion from the flag's blue then I'm not sure how they calculated it. If someone has an official source on the digitized colors of the flag, I'd love to see it.
+The [Rijkshuisstijl](https://www.rijkshuisstijl.nl/english/colours), the graphic design authority for the Dutch central government, doesn't have much to say about the flag. It specifies that the blue used in the central government's logo is {{< inlineColor 154273 >}}, which is similar but noticeably different from the color we got by converting from XYZ. If this is meant to be a direct conversion from the flag's blue then I'm not sure how they calculated it. If someone has an official source on the digitized colors of the flag, I'd love to see it.
 
 {{< colorSwatch 1e4785 "Illum. C" >}} {{< colorSwatch 154273 "Logoblauw" >}}
 
-All this said, our lives are made much easier by the fact that the Dutch flag has at least been quite consistent in its definition or reds and blues. This is in contrast to France which has never formally defined their colors and has a history of [changing them occasionally.](https://drapeaux-sfv.org/vexillologie/actualites/article/a-propos-du-bleu-du-drapeau-tricolore) This is a whole other rabbit hole I am trying to steer well clear of --- I've already spent far too much time thinking about these things as it stands.
+All this said, our lives are made much easier by the fact that the Dutch flag has at least been quite consistent in its definition of reds and blues. This is in contrast to France which has never formally defined their colors and has a history of [changing them occasionally.](https://drapeaux-sfv.org/vexillologie/actualites/article/a-propos-du-bleu-du-drapeau-tricolore) This is a whole other rabbit hole I am trying to steer well clear of --- I've already spent far too much time thinking about these things as it stands.

@@ -26,7 +26,7 @@ from osgeo import osr, gdal
 def load_dtm(lat, lon, width, height):
   dataset = gdal.Open(DTM_FILENAME)
   # srs contains the coordinate system  of the DTM
-  # srs_lat_lon conatins the lat/lon coordinate system
+  # srs_lat_lon contains the lat/lon coordinate system
   # coordinate_transform converts from lat/lon to the DTM coordinates
   srs = osr.SpatialReference()
   srs.ImportFromWkt(dataset.GetProjection())
