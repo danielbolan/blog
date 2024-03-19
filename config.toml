@@ -18,6 +18,11 @@ name = "Colophon"
 url = "/colophon"
 weight = 3
 
+[[menu.main]]
+name = "RSS"
+url = "/posts/index.xml"
+weight = 4
+
 [markup]
   [markup.highlight]
     anchorLineNos = false
